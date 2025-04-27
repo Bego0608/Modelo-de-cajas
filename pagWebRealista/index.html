@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noodlestyle</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background: url('noodles.jpg') no-repeat center center/cover;
+    color: paleturquoise;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.slogan {
+    color: white;
+    margin-top: 10px;
+}
+
+/* Nav */
+.nav {
+    background-color: #003399;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav ul li {
+    margin: 0 20px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 10px;
+    display: block;
+}
+
+/* Quienes Somos */
+.quienes-somos {
+    background-color: #c5ebf7;
+    padding: 40px 20px;
+    color: #003399;
+    text-align: center;
+}
+
+.quienes-somos .contenido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.texto {
+    text-align: left;
+    color: black;
+}
+.quienes-somos img {
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* Opiniones */
+.opiniones {
+    background-color: #f9e0c7;
+    text-align: center;
+    padding: 40px 20px;
+    color:#003399
+}
+
+.clientes {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.cliente img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.cliente p {
+    margin-top: 10px;
+    font-style: italic;
+    color: black;
+}
+
+/* Footer */
+.footer {
+    background-color: #444;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 20px;
+    flex-wrap: wrap;
+}
+
+.footer h3 {
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: #00aced;
+    text-decoration: none;
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Noodlestyle</h1>
+        <p class="slogan">Los mejores noodles a tu estilo </p>
+    </header>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#quienes-somos">Quiénes Somos</a></li>
+            <li><a href="#donde-estamos">Dónde Estamos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="quienes-somos" class="quienes-somos">
+        <h2>Quiénes somos</h2>
+        <div class="contenido">
+            <img src="cocineros.jpg" alt="Equipo de trabajo">
+            <div class="texto">
+                <h3>Un equipo joven y preparado para el futuro</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita illo quidem reprehenderit assumenda nihil, consequatur dolores ipsum harum tenetur soluta.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="opiniones" class="opiniones">
+        <h2>Opiniones de nuestros clientes</h2>
+        <div class="clientes">
+            <div class="cliente">
+                <img src="cliente1.jpg" alt="Cliente 1">
+                <p>"Son los mejores"</p>
+            </div>
+            <div class="cliente">
+                <img src="cliente2.jpg" alt="Cliente 2">
+                <p>"Siempre están cuando se les llama"</p>
+            </div>
+            <div class="cliente">
+                <img src="cliente3.jpg" alt="Cliente 3">
+                <p>"Tienen la mejor relación calidad/precio"</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="enlaces">
+            <h3>Enlaces</h3>
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a> |
+            <a href="#">Instagram</a>
+        </div>
+        <div class="direccion">
+            <h3>Estamos en</h3>
+            <p>Avda. Los Institutos<br>13600 Alcázar de San Juan</p>
+        </div>
+        <div class="email">
+            <h3>Email</h3>
+            <p>empresa@gmail.com</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
